@@ -2,6 +2,14 @@
   <img src="https://cloud.githubusercontent.com/assets/1016365/10639063/138338bc-7806-11e5-8057-d34c75f3cafc.png" alt="Universal Angular" height="320"/>
 </p>
 
+# MEAnU Starter
+Angular Universal starter with MongoDB and server APIs
+
+This project is buil from Angualr Universal
+
+angular@5.2.4
+
+
 # Angular Universal Starter [![Universal Angular](https://img.shields.io/badge/universal-angular2-brightgreen.svg?style=flat)](https://github.com/angular/universal)
 > Server-Side Rendering for Angular
 

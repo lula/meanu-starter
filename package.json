@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lula/meanu.git"
+    "url": "https://github.com/lula/meanu-starter.git"
   },
   "author": {
     "name": "Lula"
@@ -37,8 +37,6 @@
     "@angular/router": "^5.2.4",
     "@nguniversal/express-engine": "^5.0.0-beta.5",
     "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
-    "body-parser": "^1.18.2",
-    "cookie-parser": "^1.4.3",
     "core-js": "^2.4.1",
     "hammerjs": "^2.0.8",
     "rxjs": "^5.5.6",
@@ -54,6 +52,8 @@
     "cpy-cli": "^1.0.1",
     "express": "^4.16.2",
     "http-server": "^0.10.0",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
     "mongoose": "^5.0.4",
     "reflect-metadata": "^0.1.10",
     "ts-loader": "^3.5.0",
