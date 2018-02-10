@@ -2,22 +2,12 @@
   <img src="https://cloud.githubusercontent.com/assets/1016365/10639063/138338bc-7806-11e5-8057-d34c75f3cafc.png" alt="Universal Angular" height="320"/>
 </p>
 
-# MEAnU Starter
+# MEAnU Starter [![Universal Angular](https://img.shields.io/badge/universal-angular5-brightgreen.svg?style=flat)](https://github.com/angular/universal)
+
 Angular Universal starter with MongoDB and server APIs
 
-This project is buil from Angualr Universal
+This repo has started from an [Angular Universal Starter](https://github.com/angular/universal-starter) project.
 
-angular@5.2.4
-
-
-# Angular Universal Starter [![Universal Angular](https://img.shields.io/badge/universal-angular2-brightgreen.svg?style=flat)](https://github.com/angular/universal)
-> Server-Side Rendering for Angular
-
-A minimal Angular starter for Universal JavaScript using TypeScript and Webpack
-
-> If you're looking for the Angular Universal repo go to [**angular/universal**](https://github.com/angular/universal)  
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Getting Started
 
