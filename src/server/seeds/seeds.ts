@@ -2,7 +2,7 @@ import { House } from "../models/got.model";
 
 export default class Seeds {
     public static async GoT() {
-        console.log('Seeding people...')
+        console.log('Seeding...')
         let count = await House.count({});
         if (count == 0) {
             const val = await House.create({

@@ -63,10 +63,10 @@ app.get('*.*', express.static(join(DIST_FOLDER, 'browser'), {
 
 // ALl regular routes use the Universal engine
 app.get('*', (req, res, next) => {
-  if(!req.path.startsWith('/api/')) {
-    res.render('index', { req });
-  } else {
+  if(req.header('Content-Type') === 'application/json' ) {
     next();
+  } else {
+    res.render('index', { req });
   }
 });
 
