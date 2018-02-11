@@ -10,6 +10,8 @@ import * as mongoose from 'mongoose';
 import { join } from 'path';
 import { readFileSync } from 'fs';
 
+require('dotenv').config();
+
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
 
@@ -18,6 +20,9 @@ const app = express();
 
 const PORT = process.env.PORT || 4000;
 const DIST_FOLDER = join(process.cwd(), 'dist');
+const MONGODB_HOST = process.env.MONGODB_HOST || 'localhost';
+const MONGODB_PORT = process.env.MONGODB_PORT || '27017';
+const MONGODB_NAME = process.env.MONGODB_NAME || 'angular-universal-test';
 
 // Our index.html we'll use as our template
 const template = readFileSync(join(DIST_FOLDER, 'browser', 'index.html')).toString();
@@ -32,9 +37,9 @@ import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
 import Seeds from './src/server/seeds/seeds';
 import apiRoutes from './src/server/routes/api.routes';
 
-mongoose.connect('mongodb://localhost:27017/angular-universal-test')
+mongoose.connect(`mongodb://${MONGODB_HOST}:${MONGODB_PORT}/${MONGODB_NAME}`)
   .then(() => {
-    console.log('Connected to Mongo database');
+    console.log(`Connected to MongoDB ${MONGODB_NAME} on ${MONGODB_HOST}:${MONGODB_PORT} `);
     Seeds.GoT();
   })
   .catch(err => console.error(err));
