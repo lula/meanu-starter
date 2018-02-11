@@ -5,7 +5,8 @@ import { House } from '../../../server/models/got.model';
 import 'rxjs/add/observable/fromPromise';
 import { Subscription } from 'rxjs/Subscription';
 
-interface House {
+export interface House {
+  _id?: string;
   name?: string;
   words?: string;
 }

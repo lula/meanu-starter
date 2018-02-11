@@ -4,6 +4,7 @@ import { AppMaterialModule } from '../app.material.module';
 import { HousesComponent } from './houses/houses.component';
 import { GotComponent } from './got.component';
 import { RouterModule } from '@angular/router';
+import { HouseDetailComponent } from './house-detail/house-detail.component';
 
 @NgModule({
   imports: [
@@ -14,11 +15,12 @@ import { RouterModule } from '@angular/router';
         path: 'got', 
         component: GotComponent,
         children: [
-          { path: 'houses', component: HousesComponent }
+          { path: 'houses', component: HousesComponent },
+          { path: 'houses/:id', component: HouseDetailComponent }
         ]
       },
     ])
   ],
-  declarations: [HousesComponent, GotComponent]
+  declarations: [HousesComponent, GotComponent, HouseDetailComponent]
 })
 export class GotModule { }
