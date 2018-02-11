@@ -4,12 +4,5 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false,
-  mongo: {
-    db: 'angular-universal-test',
-    host: 'localhost',
-    port: 27017,
-    // user: 'user'
-    // pass: 'password'
-  }
+  production: false
 };
